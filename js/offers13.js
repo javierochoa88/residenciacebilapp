@@ -10,7 +10,7 @@ const texts1 = ["Además de estos servicios, ¿qué te ofrece el Cebil?","El pre
     const paragraphElement = document.createElement("p");
     paragraphElement.className='item11';
     const spanElement = document.createElement("span");
-    spanElement.innerHTML = "\&#11208;";
+    spanElement.innerHTML = "&#11208;";
     spanElement.style.color='red';
     paragraphElement.appendChild(spanElement);
     paragraphElement.appendChild(document.createTextNode(element));

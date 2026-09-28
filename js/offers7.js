@@ -10,7 +10,7 @@ texts4.forEach(function(element){
 		const paragraphElement4 = document.createElement("p");
 		paragraphElement4.className='item11';
 		const spanElement4 = document.createElement("span");
-		spanElement4.innerHTML = "\&#11208;";
+		spanElement4.innerHTML = "&#11208;";
 		spanElement4.style.color='red';
 		paragraphElement4.appendChild(spanElement4);
 		paragraphElement4.appendChild(document.createTextNode(element));

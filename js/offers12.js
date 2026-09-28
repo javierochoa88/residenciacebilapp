@@ -12,7 +12,7 @@ const texts = [
     const paragraphElement = document.createElement("p");
     paragraphElement.className='item11';
     const spanElement = document.createElement("span");
-    spanElement.innerHTML = "\&#11208;";
+    spanElement.innerHTML = "&#11208;";
     spanElement.style.color='red';
     paragraphElement.appendChild(spanElement);
     paragraphElement.appendChild(document.createTextNode(element));
