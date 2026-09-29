@@ -9,7 +9,7 @@ texts3.forEach(function(element){
 		const paragraphElement3 = document.createElement("p");
 		paragraphElement3.className='item11';
 		const spanElement3 = document.createElement("span");
-		spanElement3.innerHTML = "&#11208;";
+		spanElement3.innerHTML = '\u2BC8';
 		spanElement3.style.color='red';
 		paragraphElement3.appendChild(spanElement3);
 		paragraphElement3.appendChild(document.createTextNode(element));
