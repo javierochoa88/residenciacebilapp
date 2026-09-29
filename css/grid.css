@@ -58,7 +58,7 @@ body {
 
 [class^='cards']{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
   grid-auto-flow: column;
   grid-column: 1/-1;
 }
@@ -222,7 +222,6 @@ body {
 /* Add an active class to highlight the current page */
 .nav a:active {
   color:rgba(41, 216, 25, 0.94);*/
-  /*color: rgba(29, 66, 126, 1);*/
 }
 
 /* Slideshow container */
@@ -479,7 +478,7 @@ img {
 
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 728px) {
  .one{
   display: inline;
   grid-template-rows: repeat(3, 1fr);
