@@ -265,7 +265,6 @@ img {
   justify-items: baseline;
 }
 
-/* Container Footer  */
 .container2 {
   align-items: center;
 }
@@ -574,7 +573,7 @@ ul.custom-bullets li::marker {
 }
 
 .cards3{
-  grid-auto-rows: 200px;
+  grid-auto-rows: 300px;
   grid-auto-flow:grid-column;
   grid-row: 6;
 }
