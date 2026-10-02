@@ -28,7 +28,7 @@ body {
 
 .website {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   margin: 30px auto;
   background-color: rgba(255, 255, 255, 1.0);
   grid-auto-flow: row;
@@ -58,13 +58,11 @@ body {
 
 [class^='cards']{
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(250px, 1fr));
-  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-column: 1/-1;
 }
 
 .cards {
-  grid-template-rows: 350px;
   column-gap: 10px;
   grid-row: 4;
 }
@@ -97,7 +95,8 @@ body {
 }
 
 .cards6 {
-  grid-template-rows: 300px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 350px;
   column-gap: 10px;
   grid-row: 5;
   padding: 10px 10px;
@@ -129,7 +128,7 @@ body {
 }
 
 .offers2 {
-  grid-template-columns:repeat(2, 1fr);
+  grid-template-columns:40% 60%;
   grid-template-rows: 350px;
   align-items: center;
   column-gap: 10px;
@@ -145,7 +144,7 @@ body {
 
 .offers6{
   grid-template-columns:repeat(2, 1fr);
-  grid-template-rows: 200px;
+  grid-template-rows: 300px;
   align-items: center;
   column-gap: 5px;
   grid-row: 4;
@@ -220,7 +219,6 @@ body {
 /* Add an active class to highlight the current page */
 .nav a:active {
   color:rgba(41, 216, 25, 0.94);*/
-  /*color: rgba(29, 66, 126, 1);*/
 }
 
 /* Slideshow container */
@@ -256,7 +254,6 @@ img {
 [class^='container']{
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
 }
 
 /* Container Cards */
@@ -288,6 +285,11 @@ img {
   justify-content: space-around;
   background-color: rgba(214, 210, 212, 0.8);
   border-radius: 4px;
+}
+
+.container6{
+  flex-direction: column;
+  align-items: center;
 }
 
 [class^='item']{
@@ -445,9 +447,15 @@ img {
   color: rgba(0,0,0,1);
 }
 
-/* Alojamiento arrow color*/
-.color {
-  color:rgba(240, 73, 67, 1);
+/* Alojamiento custom bullets color*/
+ul.custom-bullets {
+  list-style-type: "➤";
+  padding-left: 24px;
+}
+
+ul.custom-bullets li::marker {
+  color: rgba(240, 73, 67, 1);
+  font-size: 16px;
 }
 
 .nosotros{
@@ -472,12 +480,20 @@ img {
   padding: 10px 10px;
 }
 
+@media (max-width: 728px) {
+  .website {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: auto;
+  }
+  [class^='cards'],[class^='offers']{
+    grid-template-rows: auto;
+}
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 850px) {
+@media (max-width: 498px) {
  .one{
   display: inline;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
   grid-auto-rows: 200px;
   grid-auto-flow:grid-column;
 }
@@ -536,7 +552,7 @@ img {
 
 [class^='cards']{
   display: inline;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
   grid-auto-flow: column;
 }
 .cards{
