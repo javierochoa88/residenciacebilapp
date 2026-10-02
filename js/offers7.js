@@ -1,19 +1,18 @@
-const texts4 = ["Tiempo libre y deporte","Actividades deportivas y excursiones."];
+const texts8 = ["Tiempo libre y deporte","Actividades deportivas y excursiones."];
 
-texts4.forEach(function(element){
-	if (element == texts4[0]){
-		const paragraphElement4 = document.createElement("p");		
-		paragraphElement4.className = "item12";
-		paragraphElement4.appendChild(document.createTextNode(element));
-		document.getElementById("bullets3").appendChild(paragraphElement4);
+const paragraphElement8 = document.createElement("ul");    
+paragraphElement8.className = "custom-bullets";
+texts8.forEach(function(element){
+  	if (element == texts8[0]){
+        const liElement8 = document.createElement('h1');
+        liElement8.className="item12";
+        liElement8.appendChild(document.createTextNode(element));
+        document.getElementById("bullets3").appendChild(liElement8);
 	} else {
-		const paragraphElement4 = document.createElement("p");
-		paragraphElement4.className='item11';
-		const spanElement4 = document.createElement("span");
-		spanElement4.innerHTML = '\u2BC8';
-		spanElement4.style.color='red';
-		paragraphElement4.appendChild(spanElement4);
-		paragraphElement4.appendChild(document.createTextNode(element));
-		document.getElementById('bullets3').appendChild(paragraphElement4);
-	}
+        const liElement8 = document.createElement("li");
+        liElement8.className='item11';
+        liElement8.appendChild(document.createTextNode(element));
+        paragraphElement8.appendChild(liElement8);
+        document.getElementById('bullets3').appendChild(paragraphElement8);
+  }
 });

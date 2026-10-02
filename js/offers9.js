@@ -1,17 +1,17 @@
-const texts6 = ["Atención sacerdotal.","La formación espiritual del Cebil está confiada a la Prelatura del Opus Dei. Para conocer más sobre esta institución de la Iglesia Católica, te invitamos a visitar la página Web."]
+const texts10 = ["Atención sacerdotal.","La formación espiritual del Cebil está confiada a la Prelatura del Opus Dei. Para conocer más sobre esta institución de la Iglesia Católica, te invitamos a visitar la página Web."]
 
-texts6.forEach(function(element){
-	if (element == texts6[0]){
-		const paragraphElement6 = document.createElement("p");		
-		paragraphElement6.className = "item12";
-		paragraphElement6.appendChild(document.createTextNode(element));
-		document.getElementById("bullets5").appendChild(paragraphElement6);
+texts10.forEach(function(element){
+  	if (element == texts10[0]){
+  	const paragraphElement10 = document.createElement("p");
+    paragraphElement10.appendChild(document.createTextNode(element));
+    paragraphElement10.className="item12";
+    document.getElementById("bullets5").appendChild(paragraphElement10);
 	} else {
-		const paragraphElement6 = document.createElement("p");
-		paragraphElement6.className='item11';
-		paragraphElement6.appendChild(document.createTextNode(element));
-		document.getElementById('bullets5').appendChild(paragraphElement6);
-	}
+		const paragraphElement10 = document.createElement("p");
+    paragraphElement10.className='item11';
+    paragraphElement10.appendChild(document.createTextNode(element));
+    document.getElementById('bullets5').appendChild(paragraphElement10);
+  }
 });
 
 /*Universitarios open a new tab*/

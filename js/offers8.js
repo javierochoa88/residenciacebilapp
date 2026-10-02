@@ -1,21 +1,20 @@
-const texts5 = ["Espirituales","Cursos de doctrina cristiana.","Retiros espirituales y convivencias."];
+const texts19 = ["Espirituales","Cursos de doctrina cristiana.","Retiros espirituales y convivencias."];
 
-texts5.forEach(function(element){
-	if (element == texts5[0]){
-		const paragraphElement5 = document.createElement("p");		
-		paragraphElement5.className = "item12";
-		paragraphElement5.appendChild(document.createTextNode(element));
-		document.getElementById("bullets4").appendChild(paragraphElement5);
+const paragraphElement9 = document.createElement("ul");    
+paragraphElement9.className = "custom-bullets";
+texts19.forEach(function(element){
+  if (element == texts19[0]){
+    const liElement9 = document.createElement('h1');
+    liElement9.className="item12";
+    liElement9.appendChild(document.createTextNode(element));
+    document.getElementById("bullets4").appendChild(liElement9);
 	} else {
-		const paragraphElement5 = document.createElement("p");
-		paragraphElement5.className='item11';
-		const spanElement5 = document.createElement("span");
-		spanElement5.innerHTML = '\u2BC8';
-		spanElement5.style.color='red';
-		paragraphElement5.appendChild(spanElement5);
-		paragraphElement5.appendChild(document.createTextNode(element));
-		document.getElementById('bullets4').appendChild(paragraphElement5);
-	}
+    const liElement9 = document.createElement("li");
+    liElement9.className='item11';
+    liElement9.appendChild(document.createTextNode(element));
+    paragraphElement9.appendChild(liElement9);
+    document.getElementById('bullets4').appendChild(paragraphElement9);
+  }
 });
 
 /*Calendario open a new tab*/

@@ -2,15 +2,15 @@ const texts3 = ["Solicitá ahora tu plaza","Te invitamos a acercarte y conocer n
 
 texts3.forEach(function(element){
 	if (element == texts3[0]){
-		const paragraphElement = document.createElement("p");		
-		paragraphElement.className = "item12";
-		paragraphElement.appendChild(document.createTextNode(element));
-		document.getElementById("txt4").appendChild(paragraphElement);
+		const paragraphElement3 = document.createElement("p");		
+		paragraphElement3.className = "item12";
+		paragraphElement3.appendChild(document.createTextNode(element));
+		document.getElementById("txt4").appendChild(paragraphElement3);
 	} else {
-		const paragraphElement = document.createElement("p");
-		paragraphElement.className='item11';
-		paragraphElement.appendChild(document.createTextNode(element));
-		document.getElementById('txt4').appendChild(paragraphElement);
+		const paragraphElement3 = document.createElement("p");
+		paragraphElement3.className='item11';
+		paragraphElement3.appendChild(document.createTextNode(element));
+		document.getElementById('txt4').appendChild(paragraphElement3);
 	}
 });
 
@@ -28,10 +28,10 @@ btn2.addEventListener('click', () => {
 });
 
 const text4 = "Condiciones de admisión y más información";
-const paragraphElement1 = document.createElement("p");		
-paragraphElement1.className = "item12";
-paragraphElement1.appendChild(document.createTextNode(text4));
-document.getElementById("txt4").appendChild(paragraphElement1);
+const paragraphElement4 = document.createElement("p");		
+paragraphElement4.className = "item12";
+paragraphElement4.appendChild(document.createTextNode(text4));
+document.getElementById("txt4").appendChild(paragraphElement4);
 
 /* Alojamiento servicios open a new page */
 const btn4 = document.createElement("button");
@@ -43,5 +43,5 @@ btn4.innerHTML="Descargar PDF";
 document.getElementById("txt4").appendChild(btn4);
 
 btn4.addEventListener('click', () => {
-  window.open('docs/Residencia-Universitaria-Cebil-Servicios-que-brinda.pdf', '_blank');
+  window.open('http://www.residenciacebil.org.ar/wp-content/uploads/2013/11/Residencia-Universitaria-Cebil-Servicios-que-brinda.pdf', '_blank');
 });
