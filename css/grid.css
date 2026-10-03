@@ -3,7 +3,6 @@ body {
   color: white;
   font-family: "Montserrat",sans-serif;
   font-optical-sizing: auto;
-  font-size: variable;
   background-image: repeating-linear-gradient(135deg,rgba(215, 222, 237, 0.8) 0px, rgba(215, 222, 237, 0.8) 1px, #f1eff0cc 2px, #f1eff0cc 4px, transparent 5px, transparent 6px);
   background-color: #f1eff0cc;*/
 }
@@ -292,9 +291,9 @@ img {
 }
 
 [class^='item']{
-  display: flex;
+  /*display: flex;*/
   align-items: left;
-  font-style: variable;
+  /*font-style: variable;*/
 }
 
 .item1{
@@ -338,7 +337,6 @@ img {
   text-align: center;
   cursor: pointer;
 }
-
 
 .item4{
   align-items: center;
@@ -384,7 +382,6 @@ img {
   text-align: center;
   cursor: pointer;
 }
-
 
 .item9 {
   font-size: 12px;
